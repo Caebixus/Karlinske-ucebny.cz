@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<title>2019 | Ceník pronájmů</title>
+<br>
+<br>
+<br>
+<br>
+<div class="container" style="text-align: center">
+  <br>
+  <h1>Ceník učebny</h1>
+  <div class="table-responsive-xl">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th class="align-text-bottom" style="min-width:8rem">Název učebny</th>
+          <th class="align-text-bottom" scope="col" style="min-width:8rem">Cenna denní (8.-16. hod)</th>
+          <th class="align-text-bottom" scope="col" style="min-width:8rem">Cenna půldenní (8.-13. hod)</th>
+          <th class="align-text-bottom" style="min-width:8rem" style="min-width:5rem">Kapacita ve školním uspořádání</th>
+          <th class="align-text-bottom" style="min-width:8rem">Velikost</th>
+          <th class="align-text-bottom" style="min-width:8rem">Projekce</th>
+          <th class="align-text-bottom" style="min-width:8rem">Wifi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Učebna A</th>
+          <td>5 000,-</td>
+          <td>3 500,-</td>
+          <td>24 míst</td>
+          <td>45 m²</td>
+          <td>Dataprojektor s HDMI a Apple TV</td>
+          <td>V ceně</td>
+        </tr>
+        <tr>
+          <th scope="row">Učebna B</th>
+          <td>7 000,-</td>
+          <td>4 500,-</td>
+          <td>40 míst</td>
+          <td>64 m²</td>
+          <td>Dataprojektor s HDMI a Apple TV</td>
+          <td>V ceně</td>
+        </tr>
+        <tr>
+          <th scope="row">Učebna C</th>
+          <td>5 000,-</td>
+          <td>3 500,-</td>
+          <td>16 míst</td>
+          <td>38 m²</td>
+          <td>Plazmová TV s HDMI a Apple TV</td>
+          <td>V ceně</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<br>
+<hr class="featurette-divider" style="padding-top:2rem">
+<div class="container" style="text-align: center">
+  <br>
+  <h1>Ceník občerstvení</h1>
+  <div class="table-responsive-xl">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th class="align-text-bottom" style="min-width:8rem">Druh balíčku</th>
+          <th class="align-text-bottom" style="min-width:8rem">Základní (V ceně automaticky)</th>
+          <th class="align-text-bottom" style="min-width:8rem">Slaný (2 ks chlebíčku)</th>
+          <th class="align-text-bottom" style="min-width:8rem">Sladký (2 ks koláče)</th>
+          <th class="align-text-bottom" style="min-width:8rem">Smíšený (1 ks chlebíčku + 1 ks koláče)</th>
+          <th class="align-text-bottom" style="min-width:8rem">Celodenní (2 ks chlebíčku + 2 ks koláče)</th>
+          <th class="align-text-bottom" style="min-width:8rem">Ovocná mísa s jogurty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Cena balíčku</th>
+          <td>80 kč/os.</td>
+          <td>60 kč/os.</td>
+          <td>60 kč/os.</td>
+          <td>60 kč/os.</td>
+          <td>120 kč/os.</td>
+          <td>250 kč/přestávka.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock  %}

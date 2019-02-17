@@ -1,0 +1,83 @@
+{% load staticfiles %}
+{% load static %}
+
+<!doctype html>
+<html lang="cz">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Připravili jsme pro Vás cvičné i simulace reálných taxi zkoušek a taxi testů, které Vám ukážou kde a kdy chybujete. S námi máte 99% šanci uspět!">
+  <meta name="keywords" content="Taxi zkoušky, taxi zkousky, zkousky taxi praha, zkoušky taxi praha, otázky na zkoušky praha, zkoušky na taxi, testy pro řidiče taxi, testy na taxi">
+  <meta name="author" content="Taxizkousky.cz">
+
+  <!-- Bootstrap core CSS -->
+  <link href="/docs/4.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <style>
+  .btn-dark{
+  background-color:#ef7f2d;
+  color:white;
+  border: none;
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #ef7f2d;">
+      <a class="navbar-brand" href="{% url 'homepage' %}">Pronájem učebny praha</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 10rem">
+                <big>Učebny</big>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="{% url 'ucebna_A' %}">Učebna A</a>
+                <a class="dropdown-item" href="{% url 'ucebna_B' %}">Učebna B</a>
+                <a class="dropdown-item" href="{% url 'ucebna_C' %}">Učebna C</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link active" href="{% url 'cenik' %}"><h5>Ceník</h5></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link active" href="{% url 'rezervace' %}"><h5>Rezervovat</h5></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</body>
+
+{% block content %}
+{% endblock %}
+
+<!-- FOOTER -->
+<div class="container-fluid footer navbar-fixed-bottom" style="text-align: center; height: 3rem; margin: auto;">
+  <div class="row" style="padding-top:10px">
+    <div class="col">
+      <p>&copy; 2019 Otideavzdelavani</p>
+    </div>
+    <div class="col">
+      <a href="mailto:vzdelavani@otidea.cz">vzdelavani@otidea.cz</a>
+    </div>
+    <div class="col">
+      <a href="http://otideavzdelavani.cz/">Otideavzdelavani.cz</a>
+    </div>
+  </div>
+</div>
+<br>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</html>
