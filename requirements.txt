@@ -21,7 +21,6 @@ psycopg2-binary==2.7.6.1
 py==1.7.0
 pytz==2018.7
 requests==2.20.1
-securionpay==1.0.1
 toml==0.10.0
 tox==3.5.3
 urllib3==1.24.1
