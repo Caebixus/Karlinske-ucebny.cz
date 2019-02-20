@@ -71,7 +71,7 @@
     {% csrf_token %}
     {{ form|crispy }}
     <div class="body" style="text-align: center">
-      <input class="btn btn-primary" type="submit" name="pokus" value="Save" style="width: 20rem">
+      <input class="btn btn-primary" type="submit" name="pokus" value="Odeslat nezávaznou poptávku" style="width: 20rem; background-color: #ef7f2d; border: none">
     </div>
   </form>
 </div>
@@ -80,15 +80,47 @@
 <br>
 <br>
 <div class="container-fluid footer navbar-fixed-bottom" style="text-align: center; height: 3rem; margin: auto;">
-  <div class="row" style="padding-top:10px">
-    <div class="col">
-      <p>&copy; 2019 Otideavzdelavani</p>
+  <div class="row" style="padding-top:10px; text-align: center">
+    <div class="col-md-4">
+      <div class="card flex-md-row mb-4 box-shadow" style="height: 20rem; border: none">
+        <div class="card-body align-items-middle">
+          <h3 class="mb-0">
+            <a class="text-dark" href="#">Adresa</a>
+          </h3>
+            <br>
+            <p>Otidea vzdělávání, s.r.o.</p>
+            <p>Budova METEOR C (3. patro)</p>
+            <p>Thámova 681/32</p>
+            <p>186 00, Praha 8</p>
+        </div>
+      </div>
     </div>
-    <div class="col">
-      <a href="mailto:vzdelavani@otidea.cz">vzdelavani@otidea.cz</a>
+    <div class="col-md-4">
+      <div class="card flex-md-row mb-4 box-shadow" style="height: 20rem; border: none">
+        <div class="card-body align-items-middle">
+          <h3 class="mb-0">
+            <a class="text-dark">Kontaktní informace</a>
+          </h3>
+            <br>
+            <p><a href="mailto:vzdelavani@otidea.cz">vzdelavani@otidea.cz</a></p>
+            <p><a href="http://otideavzdelavani.cz/">www.otideavzdelavani.cz</a></p>
+            <p><a>Telefonní číslo: 295 565 126</a></p>
+        </div>
+      </div>
     </div>
-    <div class="col">
-      <a href="http://otideavzdelavani.cz/">Otideavzdelavani.cz</a>
+    <div class="col-md-4">
+      <div class="card flex-md-row mb-4 box-shadow" style="height: 20rem; border: none">
+        <div class="card-body align-items-middle">
+          <h3 class="mb-0 align-items-middle">
+            <p><a class="text-dark">Kontaktní osoba</a></p>
+          </h3>
+          <p><a class="text-dark">Miroslava Faltová</a></p>
+          <p><img class="card-img" src="{% static 'mirka.png' %}" alt="Card image cap" style="height: 15rem; max-width:10rem"></p>
+        </div>
+      </div>
     </div>
   </div>
+  <br>
+  <p>&copy; 2019 Otideavzdelavani</p>
 </div>
+<br>

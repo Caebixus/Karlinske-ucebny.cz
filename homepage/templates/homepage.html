@@ -105,56 +105,58 @@
 
 
 <!-- START THE FEATURETTES -->
-
-<hr class="featurette-divider" style="padding-top:2rem">
-<div class="container" style="text-align: center">
-  <div class="row">
-    <div class="col-sm" style="text-align: left">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          <img src="{% static 'air-conditioner.png' %}" class="mr-3" alt="..." style="height: 2rem">Moderní učebna s klimatizací
-        </li>
-        <li class="list-group-item">
-          <img src="{% static 'group.png' %}" class="mr-3" alt="..." style="height: 2rem">Místnosti s kapacitou až 40 osob ve školním uspořádání
-        </li>
-        <li class="list-group-item">
-          <img src="{% static 'calendar1.png' %}" class="mr-3" alt="..." style="height: 2rem">7 dní v týdnu, bez časového omezení, včetně asistence
-        </li>
-        <li class="list-group-item">
-          <img src="{% static 'wifi.png' %}" class="mr-3" alt="..." style="height: 2rem">Internet s pokrytým Wi-Fi ve všech prostorách
-        </li>
-        <li class="list-group-item">
-          <img src="{% static 'projector.png' %}" class="mr-3" alt="..." style="height: 2rem">Dataprojektor, notebook s dálkovým ovladačem včetně laseru
-        </li>
-      </ul>
-    </div>
-    <hr class="featurette-divider" style="padding-top:2rem">
-    <div class="col-sm" style="text-align: left">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          <img src="{% static 'apple1.png' %}" class="mr-3" alt="..." style="height: 2rem">Možnost Apple TV pro uživatele značky APPLE
-        </li>
-        <li class="list-group-item">
-          <img src="{% static 'whiteboard.png' %}" class="mr-3" alt="..." style="height: 2rem">Flip chart, White board
-        </li>
-        <li class="list-group-item">
-          <img src="{% static 'catering.png' %}" class="mr-3" alt="..." style="height: 2rem">Cateringové zázemí s teplými a studenými nápoji
-        </li>
-        <li class="list-group-item">
-          <img src="{% static 'fruit.png' %}" class="mr-3" alt="..." style="height: 2rem">Občerstvení od předních dodavatelů
-        </li>
-        <li class="list-group-item">
-          <img src="{% static 'discount.png' %}" class="mr-3" alt="..." style="height: 2rem">Stravenky na oběd pro účastníky i organizátory akce
-        </li>
-      </ul>
+<section class="bg-light" id="mapa">
+  <hr class="featurette-divider" style="padding-top:2rem">
+  <div class="container" style="text-align: center">
+    <div class="row">
+      <div class="col-sm" style="text-align: left">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" style="background-color: transparent">
+            <img src="{% static 'air-conditioner.png' %}" class="mr-3" alt="..." style="height: 2rem;">Moderní učebny s klimatizací
+          </li>
+          <li class="list-group-item" style="background-color: transparent">
+            <img src="{% static 'group.png' %}" class="mr-3" alt="..." style="height: 2rem">Místnosti s kapacitou až 40 osob ve školním uspořádání
+          </li>
+          <li class="list-group-item" style="background-color: transparent">
+            <img src="{% static 'calendar1.png' %}" class="mr-3" alt="..." style="height: 2rem">7 dní v týdnu, bez časového omezení, včetně asistence
+          </li>
+          <li class="list-group-item" style="background-color: transparent">
+            <img src="{% static 'wifi.png' %}" class="mr-3" alt="..." style="height: 2rem">Internet s pokrytím Wi-Fi ve všech prostorách
+          </li>
+          <li class="list-group-item" style="background-color: transparent">
+            <img src="{% static 'projector.png' %}" class="mr-3" alt="..." style="height: 2rem">Dataprojektor, notebook, laserové ukazovátko
+          </li>
+        </ul>
+      </div>
+      <hr class="featurette-divider">
+      <div class="col-sm" style="text-align: left">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" style="background-color: transparent">
+            <img src="{% static 'apple1.png' %}" class="mr-3" alt="..." style="height: 2rem">Možnost Apple TV pro uživatele značky APPLE
+          </li>
+          <li class="list-group-item" style="background-color: transparent">
+            <img src="{% static 'whiteboard.png' %}" class="mr-3" alt="..." style="height: 2rem">Flip chart, White board
+          </li>
+          <li class="list-group-item" style="background-color: transparent">
+            <img src="{% static 'catering.png' %}" class="mr-3" alt="..." style="height: 2rem">Cateringové zázemí s teplými a studenými nápoji
+          </li>
+          <li class="list-group-item" style="background-color: transparent">
+            <img src="{% static 'fruit.png' %}" class="mr-3" alt="..." style="height: 2rem">Občerstvení od předních dodavatelů
+          </li>
+          <li class="list-group-item" style="background-color: transparent">
+            <img src="{% static 'discount.png' %}" class="mr-3" alt="..." style="height: 2rem">Stravenky na oběd pro účastníky i organizátory akce
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
+  <br>
+<hr class="featurette-divider">
+</section>
 <br>
-<hr class="featurette-divider" style="padding-top:2rem">
-
 <div class="container" style="text-align: center">
   <h2>Kde sídlíme?</h2>
+  <br>
 </div>
 <div style="text-align: center">
   <a target="_blank" href="{% static 'mapa.png' %}">
@@ -163,5 +165,29 @@
 </div>
 <br>
 <br>
+<hr class="featurette-divider" style="padding-top:2rem">
+<div class="container text-center align-items-middle" style="align-items: center; text-align: center">
+  <h2>Naši klienti</h2>
+  <div class="row align-items-middle" style="align-items: center; text-align: center">
+    <div class="col-lg-4">
+      <img src="{% static 'logo1.png' %}" class="rounded" alt="...">
+    </div>
+    <div class="col-lg-4">
+      <img src="{% static 'logo2.png' %}" class="rounded" alt="...">
+    </div>
+    <div class="col-lg-4">
+      <img src="{% static 'logo3.png' %}" class="rounded" alt="...">
+    </div>
+  </div>
+  <div class="row align-items-middle" style="align-items: center; text-align: center">
+    <div class="col-lg-4">
+      <img src="{% static 'logo4.png' %}" class="rounded" alt="...">
+    </div>
+    <div class="col-lg-4">
+      <img src="{% static 'logo5.png' %}" class="rounded" alt="...">
+    </div>
+  </div>
+</div>
+<hr class="featurette-divider" style="padding-top:2rem">
 <br>
 {% endblock  %}
