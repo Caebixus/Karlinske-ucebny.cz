@@ -37,7 +37,7 @@ def rezervace(request):
             '\nPoznámka: ' + str(poznamka) +
             '\npřípadně se přihlašte na karlinske-ucebny.cz/admin',
             'info.zadavatel@gmail.com',
-            ['ma.davidlangr@gmail.com'],
+            ['vzdelavani@otidea.cz'],
             fail_silently=False,
             )
 
