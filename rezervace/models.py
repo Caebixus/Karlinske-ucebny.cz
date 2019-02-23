@@ -11,7 +11,7 @@ TYP_UČEBNY = (
 )
 
 TYP_OBČERSTVENÍ = (
-    ('Základní balíček v ceně - (Káva, voda, čaj, ovocné sirupy)', 'Základní balíček v ceně - (Káva, voda, čaj, ovocné sirupy)'),
+    ('Tento základní balíček je účtovaný automaticky - (Káva, voda, čaj, ovocné sirupy)', 'Tento základní balíček je účtovaný automaticky - (Káva, voda, čaj, ovocné sirupy)'),
     ('Slaný', 'Slaný'),
     ('Sladký', 'Sladký'),
     ('Smíšený', 'Smíšený'),
@@ -25,7 +25,7 @@ class Rezervace(models.Model):
     Email = models.EmailField()
     Telefonní_číslo = models.IntegerField()
     Počet_účastníků = models.IntegerField()
-    Občerstvení = MultiSelectField(choices=TYP_OBČERSTVENÍ, default='Základní balíček v ceně - (Káva, voda, čaj, ovocné sirupy)', blank=True)
+    Občerstvení = MultiSelectField(choices=TYP_OBČERSTVENÍ, default='Tento základní balíček je účtovaný automaticky - (Káva, voda, čaj, ovocné sirupy)', blank=True)
     Poznámka = models.TextField(blank=True)
     Objednávka_přijata = models.DateTimeField(auto_now_add=True, blank=True)
     IČO = models.IntegerField()
