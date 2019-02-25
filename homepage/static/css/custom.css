@@ -19,3 +19,8 @@
   font-size: 55px;
   color: #ef7f2d;
 }
+
+.embed-responsive-16by9 {
+   padding-top: 100%;
+   max-height: 900px;
+}
