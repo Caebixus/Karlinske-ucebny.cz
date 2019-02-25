@@ -16,6 +16,7 @@ def rezervace(request):
         ucebna = data['Jakou_učebnu']
         datumA = data['Začátek_pronájmu_učebny']
         datumB = data['Konec_pronájmu_učebny']
+        company = data['Společnost']
         ico = data['IČO']
         email = data['Email']
         phone = data['Telefonní_číslo']
@@ -30,6 +31,7 @@ def rezervace(request):
             '\nJaká učebna: ' + str(ucebna) +
             '\nDatum začátku: ' + str(datumA) +
             '\nDatum konce: ' + str(datumB) +
+            '\nSpolečnost: ' + str(company) +
             '\nIČO: ' + str(ico) +
             '\nTelefon: ' + str(phone) +
             '\nPočet účastníků: ' + str(pocet) +

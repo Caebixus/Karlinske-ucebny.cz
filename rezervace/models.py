@@ -23,6 +23,7 @@ class Rezervace(models.Model):
     Začátek_pronájmu_učebny = models.DateTimeField()
     Konec_pronájmu_učebny = models.DateTimeField()
     Email = models.EmailField()
+    Společnost = models.CharField(max_length=50, null=True)
     Telefonní_číslo = models.IntegerField()
     Počet_účastníků = models.IntegerField()
     Občerstvení = MultiSelectField(choices=TYP_OBČERSTVENÍ, default='Tento základní balíček je účtovaný automaticky - (Káva, voda, čaj, ovocné sirupy)', blank=True)
