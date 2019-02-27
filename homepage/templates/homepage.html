@@ -13,6 +13,7 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
     <div class="carousel-inner" style="min-height: 20rem; text-align: center">
       <div class="carousel-item active">
@@ -30,7 +31,7 @@
         <div class="container">
           <div class="carousel-caption">
             <h1 class="display-9">Moderní učebny</h1>
-            <p class="lead">Výběr z několika učeben s kapacitou až 40 osob ve školením a 70 osob v divadelním uspořádání</p>
+            <p class="lead">Výběr z několika učeben s kapacitou až 40 osob ve školním uspořádání a 70 osob v divadelním uspořádání</p>
             <a class="btn btn-dark btn-lg" href="#ucebny" role="button">Více informací</a>
             <br>
           </div>
@@ -42,6 +43,17 @@
           <div class="carousel-caption">
             <h1 class="display-9">Klimatizace a občerstvení</h1>
             <p class="lead">Vysokorychlostní WI-FI, klimatizace a cateringové zázemí jsou samozřejmostí</p>
+            <a class="btn btn-dark btn-lg" href="#ucebny" role="button">Více informací</a>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="third-slide" src="{% static 'homepage4a.jpg' %}" alt="First slide" style="width:100%; height:100%; max-height:45rem; max-width: 90rem; min-height:30rem; min-width:40rem">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="display-9">Bezpečnost</h1>
+            <p class="lead">Prostory jsou vybavené recepcí budovy a recepcí společnosti, uzamykatelné učebny</p>
             <a class="btn btn-dark btn-lg" href="#ucebny" role="button">Více informací</a>
             <br>
           </div>
@@ -159,8 +171,18 @@
     </div>
   </div>
   <br>
-<hr class="featurette-divider">
 </section>
+<hr class="featurette-divider" style="padding-top:2rem">
+<br>
+<div class="container" style="text-align: center;">
+  <h2>Virtuální prohlídka</h2>
+  <br>
+</div>
+<div class="container">
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.fotografiefirem.cz/iframe.php?id=2940&width=1700&height=900" allowfullscreen></iframe>
+  </div>
+</div>
 <br>
 <div class="container" style="text-align: center">
   <h2>Kde sídlíme?</h2>
@@ -196,17 +218,7 @@
     </div>
   </div>
 </div>
-<hr class="featurette-divider" style="padding-top:2rem">
-<br>
-<div class="container" style="text-align: center;">
-  <h2>Virtuální prohlídka</h2>
-  <br>
-</div>
-<div class="container">
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.fotografiefirem.cz/iframe.php?id=2940&width=1700&height=900" allowfullscreen></iframe>
-  </div>
-</div>
+
 
 
 {% endblock  %}
