@@ -23,12 +23,23 @@
       border: none;
     }
   </style>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P2527C7');</script>
+<!-- End Google Tag Manager -->
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2527C7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #ef7f2d;">
-      <a class="navbar-brand" href="{% url 'homepage' %}">Pronájem učebny praha</a>
+      <a href="{% url 'homepage' %}"><img class="navbar-brand" src="{% static 'Karlinskeucebnylogo.png' %}" style="height: 65px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -99,6 +110,7 @@
             <a class="text-dark">Adresa</a>
           </h3>
           <br>
+          <p><b>Pronájem Učeben Praha</b></p>
           <p>Otidea vzdělávání, s.r.o.</p>
           <p>Budova METEOR C (3. patro)</p>
           <p>Thámova 681/32</p>

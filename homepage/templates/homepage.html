@@ -17,7 +17,7 @@
     </ol>
     <div class="carousel-inner" style="min-height: 20rem; text-align: center">
       <div class="carousel-item active">
-        <img class="first-slide" src="{% static 'first.jpg' %}" alt="First slide" style="width:100%; height:100%; max-height:45rem; max-width: 90rem; min-height:30rem; min-width:40rem">
+        <img class="first-slide" src="{% static 'first.jpg' %}" alt="First slide" style="width:100%; height:100%; max-height:45rem; max-width: 84rem; min-height:30rem; min-width:40rem">
         <div class="container">
           <div class="carousel-caption">
             <h1 class="display-9">Sídlíme v Karlíně</h1>
@@ -27,10 +27,10 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img class="second-slide" src="{% static 'second.jpg' %}" alt="First slide" style="width:100%; height:100%; max-height:45rem; max-width: 90rem; min-height:30rem; min-width:40rem">
+        <img class="second-slide" src="{% static 'second.jpg' %}" alt="Second slide" style="width:100%; height:100%; max-height:45rem; max-width: 84rem; min-height:30rem; min-width:40rem">
         <div class="container">
           <div class="carousel-caption">
-            <h1 class="display-9">Moderní učebny</h1>
+            <h1 class="display-9">Moderní Karlínské učebny</h1>
             <p class="lead">Výběr z několika učeben s kapacitou až 40 osob ve školním uspořádání a 70 osob v divadelním uspořádání</p>
             <a class="btn btn-dark btn-lg" href="#ucebny" role="button">Více informací</a>
             <br>
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img class="third-slide" src="{% static 'third.jpg' %}" alt="First slide" style="width:100%; height:100%; max-height:45rem; max-width: 90rem; min-height:30rem; min-width:40rem">
+        <img class="third-slide" src="{% static 'third.jpg' %}" alt="Third slide" style="width:100%; height:100%; max-height:45rem; max-width: 84rem; min-height:30rem; min-width:40rem">
         <div class="container">
           <div class="carousel-caption">
             <h1 class="display-9">Klimatizace a občerstvení</h1>
@@ -49,7 +49,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img class="third-slide" src="{% static 'homepage4a.jpg' %}" alt="First slide" style="width:100%; height:100%; max-height:45rem; max-width: 90rem; min-height:30rem; min-width:40rem">
+        <img class="third-slide" src="{% static 'homepage4a.jpg' %}" alt="Fourth slide" style="width:100%; height:100%; max-height:45rem; max-width: 84rem; min-height:30rem; min-width:40rem">
         <div class="container">
           <div class="carousel-caption">
             <h1 class="display-9">Bezpečnost</h1>
@@ -76,12 +76,13 @@
 <div class="container" id="ucebny" style="padding-top:2rem; padding-bottom:2rem">
   <br>
   <h2 style="text-align: center">Nabídka</h2>
+  <p style="text-align: center">Celkově si můžete vybírat z pronájmu 3 školicích učeben, které sdílejí kuchyňku i recepci.</p>
   <br>
   <div class="row">
     <div class="col-sm">
       <div class="card-group">
         <div class="card" style="text-align: center">
-          <img src="{% static 'A500.jpg' %}" class="card-img-top" alt="...">
+          <img src="{% static 'A500.jpg' %}" class="card-img-top" alt="Učebna A foto">
           <div class="card-body">
             <h5 class="card-title">Učebna A</h5>
             <a class="btn btn-secondary" href="{% url 'ucebna_A' %}" style="border: none">Detail učebny A</a>
@@ -93,7 +94,7 @@
     <div class="col-sm">
       <div class="card-group">
         <div class="card" style="text-align: center">
-          <img src="{% static 'B500.jpg' %}" class="card-img-top" alt="...">
+          <img src="{% static 'B500.jpg' %}" class="card-img-top" alt="Učebna B foto">
           <div class="card-body">
             <h5 class="card-title">Učebna B</h5>
             <a class="btn btn-secondary" href="{% url 'ucebna_B' %}" style="border: none">Detail učebny B</a>
@@ -105,7 +106,7 @@
     <div class="col-sm">
       <div class="card-group">
         <div class="card" style="text-align: center">
-          <img src="{% static 'C500.jpg' %}" class="card-img-top" alt="...">
+          <img src="{% static 'C500.jpg' %}" class="card-img-top" alt="Učebna C foto">
           <div class="card-body">
             <h5 class="card-title">Učebna C</h5>
             <a class="btn btn-secondary" href="{% url 'ucebna_C' %}" style="border: none">Detail učebny C</a>
@@ -126,22 +127,22 @@
       <div class="col-sm" style="text-align: left">
         <ul class="list-group list-group-flush">
           <li class="list-group-item" style="background-color: transparent">
-            <img src="{% static 'air-conditioner.png' %}" class="mr-3" alt="..." style="height: 2rem;">Moderní učebny s klimatizací
+            <img src="{% static 'air-conditioner.png' %}" class="mr-3" alt="Ikonka klimatizace" style="height: 2rem;">Moderní učebny s klimatizací
           </li>
           <li class="list-group-item" style="background-color: transparent">
-            <img src="{% static 'wheelchair.png' %}" class="mr-3" alt="..." style="height: 2rem">Bezbariérový přístup
+            <img src="{% static 'wheelchair.png' %}" class="mr-3" alt="Ikonka bezbariérový přístup" style="height: 2rem">Bezbariérový přístup
           </li>
           <li class="list-group-item" style="background-color: transparent">
-            <img src="{% static 'group.png' %}" class="mr-3" alt="..." style="height: 2rem">Místnosti s kapacitou až 40 osob ve školním uspořádání
+            <img src="{% static 'group.png' %}" class="mr-3" alt="Ikonka skupiny" style="height: 2rem">Místnosti s kapacitou až 40 osob ve školním uspořádání
           </li>
           <li class="list-group-item" style="background-color: transparent">
-            <img src="{% static 'calendar1.png' %}" class="mr-3" alt="..." style="height: 2rem">7 dní v týdnu, bez časového omezení, včetně asistence
+            <img src="{% static 'calendar1.png' %}" class="mr-3" alt="Ikonka kalendář" style="height: 2rem">7 dní v týdnu, bez časového omezení, včetně asistence
           </li>
           <li class="list-group-item" style="background-color: transparent">
-            <img src="{% static 'wifi.png' %}" class="mr-3" alt="..." style="height: 2rem">Internet s pokrytím Wi-Fi ve všech prostorách
+            <img src="{% static 'wifi.png' %}" class="mr-3" alt="Ikonka wifi" style="height: 2rem">Internet s pokrytím Wi-Fi ve všech prostorách
           </li>
           <li class="list-group-item" style="background-color: transparent">
-            <img src="{% static 'projector.png' %}" class="mr-3" alt="..." style="height: 2rem">Dataprojektor, notebook, laserové ukazovátko
+            <img src="{% static 'projector.png' %}" class="mr-3" alt="Ikonka Dataprojektor" style="height: 2rem">Dataprojektor, notebook, laserové ukazovátko
           </li>
         </ul>
       </div>
@@ -149,22 +150,22 @@
       <div class="col-sm" style="text-align: left">
         <ul class="list-group list-group-flush">
           <li class="list-group-item" style="background-color: transparent">
-            <img src="{% static 'apple1.png' %}" class="mr-3" alt="..." style="height: 2rem">Možnost Apple TV pro uživatele značky APPLE
+            <img src="{% static 'apple1.png' %}" class="mr-3" alt="Ikonka logo Apple" style="height: 2rem">Možnost Apple TV pro uživatele značky APPLE
           </li>
           <li class="list-group-item" style="background-color: transparent">
-            <img src="{% static 'whiteboard.png' %}" class="mr-3" alt="..." style="height: 2rem">Flip chart, White board
+            <img src="{% static 'whiteboard.png' %}" class="mr-3" alt="Ikonka Flipchart" style="height: 2rem">Flip chart, White board
           </li>
           <li class="list-group-item" style="background-color: transparent">
-            <img src="{% static 'lock.png' %}" class="mr-3" alt="..." style="height: 2rem">Bezpečnost učeben
+            <img src="{% static 'lock.png' %}" class="mr-3" alt="Ikonka zámek" style="height: 2rem">Bezpečnost učeben
           </li>
           <li class="list-group-item" style="background-color: transparent">
-            <img src="{% static 'catering.png' %}" class="mr-3" alt="..." style="height: 2rem">Cateringové zázemí s teplými a studenými nápoji
+            <img src="{% static 'catering.png' %}" class="mr-3" alt="Ikonka občerstvení" style="height: 2rem">Cateringové zázemí s teplými a studenými nápoji
           </li>
           <li class="list-group-item" style="background-color: transparent">
-            <img src="{% static 'fruit.png' %}" class="mr-3" alt="..." style="height: 2rem">Občerstvení od předních dodavatelů
+            <img src="{% static 'fruit.png' %}" class="mr-3" alt="Ikonka ovoce" style="height: 2rem">Občerstvení od předních dodavatelů
           </li>
           <li class="list-group-item" style="background-color: transparent">
-            <img src="{% static 'discount.png' %}" class="mr-3" alt="..." style="height: 2rem">Stravenky na oběd pro účastníky i organizátory akce
+            <img src="{% static 'discount.png' %}" class="mr-3" alt="Ikonka slevy a stravenky" style="height: 2rem">Stravenky na oběd pro účastníky i organizátory akce
           </li>
         </ul>
       </div>
@@ -172,10 +173,38 @@
   </div>
   <br>
 </section>
+<div class="container" style="padding-top: 2rem" id="info">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Pražský pronájem učeben v moderní kancelářské čtvrti </h2>
+      <br>
+      <p class="lead">Například pro Vaše odborníky a profesionály, kteří potřebují školit své posluchače a firmy v různých odvětvých. Naše školící místrnosti jsou pro tyto vybaveny odpovídajími stolečky a židličkami, připojením na wifi a občerstvením.</p>
+      <p class="lead">Pro Vás jako přednášejícího jistě potěší projektor na který se lze připojit pomocí HDMI nebo Apple TV. Školicí místnosti jsou oddělené od hluku ulice a po dobu školení Vás nebude nic rušit. Díky strategické poloze v centru Prahy jsou tyto učebny velmi často navštěvovány TOP firmami a specialisty v okolí.</p>
+    </div>
+    <div class="col-md-5">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="{% static 'photoone.jpg' %}">
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Kvalitní služby spojené s potřebami pro profesionální prezentace</h2>
+      <br>
+      <p class="lead">V našich školicích místnostech naleznete vše, co je potřeba pro Vaše úspěšné školení – recepce, vlastní kuchyňku s nápoji (čaj, limonáda, kafe, horká čokoláda), služby asistentky a metro přímo u vhodu do budovy.</p>
+      <p class="lead">V okolí jsou mimo jiné různé, vyhlášené restaurace pro každodenní pracovní obědy.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="{% static 'phototwo.jpg' %}">
+    </div>
+  </div>
+</div>
+<br>
 <hr class="featurette-divider" style="padding-top:2rem">
 <br>
 <div class="container" style="text-align: center;">
   <h2>Virtuální prohlídka</h2>
+  <p>Podívejte se pomocí simulace google street view, jak to v našich učebnách vypadá a procházejte jednotlivé prostory</p>
   <br>
 </div>
 <div class="container">
@@ -186,6 +215,7 @@
 <br>
 <div class="container" style="text-align: center">
   <h2>Kde sídlíme?</h2>
+  <p>Vpravo při východu z metra Křižíkova je ihned budovat C našich kanceláří. V blízkosti je také tramvajová stanice Křižíkova.</p>
   <br>
 </div>
 <div style="text-align: center">
@@ -200,24 +230,25 @@
   <h2>Naši klienti</h2>
   <div class="row align-items-middle" style="align-items: center; text-align: center">
     <div class="col-lg-4">
-      <img src="{% static 'logo1.png' %}" class="rounded" alt="...">
+      <img src="{% static 'logo1.png' %}" class="rounded" alt="Logo ArcelorMittal">
     </div>
     <div class="col-lg-4">
-      <img src="{% static 'logo2.png' %}" class="rounded" alt="...">
+      <img src="{% static 'logo2.png' %}" class="rounded" alt="Logo Inspiring Beauty">
     </div>
     <div class="col-lg-4">
-      <img src="{% static 'logo3.png' %}" class="rounded" alt="...">
+      <img src="{% static 'logo3.png' %}" class="rounded" alt="Logo Deloitte">
     </div>
   </div>
   <div class="row align-items-middle" style="align-items: center; text-align: center">
     <div class="col-lg-6">
-      <img src="{% static 'logo4.png' %}" class="rounded" alt="...">
+      <img src="{% static 'logo4.png' %}" class="rounded" alt="Logo mBank">
     </div>
     <div class="col-lg-6">
-      <img src="{% static 'logo5.png' %}" class="rounded" alt="...">
+      <img src="{% static 'logo5.png' %}" class="rounded" alt="Logo KPMG">
     </div>
   </div>
 </div>
+<hr>
 
 
 
