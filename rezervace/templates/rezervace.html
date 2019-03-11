@@ -11,9 +11,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Připravili jsme pro Vás cvičné i simulace reálných taxi zkoušek a taxi testů, které Vám ukážou kde a kdy chybujete. S námi máte 99% šanci uspět!">
-  <meta name="keywords" content="Taxi zkoušky, taxi zkousky, zkousky taxi praha, zkoušky taxi praha, otázky na zkoušky praha, zkoušky na taxi, testy pro řidiče taxi, testy na taxi">
-  <meta name="author" content="Taxizkousky.cz">
+  <meta name="description" content="Nabízíme pronájem moderních a bezpečných školicích učeben s občerstvením v pražském Karlíně. Máme nejlepší prostory pro profesionální školitele.">
+  <meta name="keywords" content="pronájem učebny praha, pronájem školicí místnosti, pronájem školicí učebny">
+  <meta name="author" content="Karlinské-učebny.cz">
 
   <!-- Bootstrap core CSS -->
   <link href="/docs/4.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -21,18 +21,29 @@
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <style>
-  .btn-dark{
-  background-color:#ef7f2d;
-  color:white;
-  border: none;
-  }
+    .btn-dark{
+      background-color:#ef7f2d;
+      color:white;
+      border: none;
+    }
   </style>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P2527C7');</script>
+<!-- End Google Tag Manager -->
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2527C7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #ef7f2d;">
-      <a class="navbar-brand" href="{% url 'homepage' %}">Pronájem učebny praha</a>
+      <a href="{% url 'homepage' %}"><img class="navbar-brand" src="{% static 'Karlinskeucebnylogo.png' %}" style="height: 65px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -51,10 +62,14 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-item nav-link active" href="{% url 'cenik' %}"><h5>Ceník</h5></a>
+            <a class="nav-item nav-link active" href="{% url 'cenik' %}">
+              <h5>Ceník</h5>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-item nav-link active" href="{% url 'rezervace' %}"><h5>Rezervovat</h5></a>
+            <a class="nav-item nav-link active" href="{% url 'rezervace' %}">
+              <h5>Rezervovat</h5>
+            </a>
           </li>
         </ul>
       </div>
