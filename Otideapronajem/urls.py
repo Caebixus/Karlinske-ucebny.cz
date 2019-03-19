@@ -26,5 +26,6 @@ urlpatterns = [
     path('cenik', views.cenik, name='cenik'),
     path('ucebny/', include('ucebny.urls'), name='ucebny'),
     path('rezervace/', rezervace.views.rezervace, name='rezervace'),
+    path('sitemap.xml', views.sitemap, name='sitemap'),
     path('rezervace_poslana', rezervace.views.rezervace_poslana, name='rezervace_poslana'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
